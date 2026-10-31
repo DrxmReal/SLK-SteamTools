@@ -124,8 +124,8 @@ enabled = false
 [remote]
 # Optional metadata mirror(s). Leave unset to use the built-in mirror chain,
 # which is tried in order until one responds:
-#   1. https://raw.githubusercontent.com/madoiscool/steam-monitor/{channel}/{component}/{sha256}.toml
-#   2. https://cdn.jsdelivr.net/gh/madoiscool/steam-monitor@{channel}/{component}/{sha256}.toml
+#   1. https://raw.githubusercontent.com/DrxmReal/slk-steam-monitor/{channel}/{component}/{sha256}.toml
+#   2. https://cdn.jsdelivr.net/gh/DrxmReal/slk-steam-monitor@{channel}/{component}/{sha256}.toml
 #   3. https://git.lua.tools/luatools/steam-monitor/raw/branch/{channel}/{component}/{sha256}.toml
 #
 # url_template may be a single string OR an array of strings. When set, it
@@ -138,5 +138,6 @@ enabled = false
 # Multiple fallbacks (tried top to bottom):
 # url_template = [
 #   "https://git.lua.tools/luatools/steam-monitor/raw/branch/{channel}/{component}/{sha256}.toml",
-#   "https://raw.githubusercontent.com/madoiscool/steam-monitor/{channel}/{component}/{sha256}.toml",
+#   "https://raw.githubusercontent.com/DrxmReal/slk-steam-monitor/{channel}/{component}/{sha256}.toml",
 # ]
+
