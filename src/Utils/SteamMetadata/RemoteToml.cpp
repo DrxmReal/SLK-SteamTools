@@ -17,6 +17,8 @@ namespace {
     // Built-in mirror chain, tried in order. Used when [remote] url_template is unset.
     // Mirrors are independent repos/hosts (not just CDN copies of one repo).
     constexpr const char* kDefaultTemplates[] = {
+        "https://raw.githubusercontent.com/DrxmReal/slk-steam-monitor/{channel}/{component}/{sha256}.toml",
+        "https://cdn.jsdelivr.net/gh/DrxmReal/slk-steam-monitor@{channel}/{component}/{sha256}.toml",
         "https://raw.githubusercontent.com/madoiscool/steam-monitor/{channel}/{component}/{sha256}.toml",
         "https://cdn.jsdelivr.net/gh/madoiscool/steam-monitor@{channel}/{component}/{sha256}.toml",
         "https://git.lua.tools/luatools/steam-monitor/raw/branch/{channel}/{component}/{sha256}.toml",
