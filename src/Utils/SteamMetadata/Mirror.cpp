@@ -16,8 +16,8 @@ namespace {
     constexpr const char* kBaseTemplates[] = {
         "https://raw.githubusercontent.com/DrxmReal/SLK-SteamTools/updates/{path}",
         "https://cdn.jsdelivr.net/gh/DrxmReal/SLK-SteamTools@updates/{path}",
-        "https://raw.githubusercontent.com/madoiscool/BetterSteamTools/updates/{path}",
-        "https://cdn.jsdelivr.net/gh/madoiscool/BetterSteamTools@updates/{path}",
+        "https://raw.githubusercontent.com/DrxmReal/SLK-SteamTools/updates/{path}",
+        "https://fast.jsdelivr.net/gh/DrxmReal/SLK-SteamTools@updates/{path}",
     };
 
     std::string Expand(std::string tmpl, std::string_view relPath)

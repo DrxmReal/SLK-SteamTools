@@ -87,18 +87,7 @@ static uint32_t InitThread(OSTPlatform::DynamicLibrary::ModuleHandle selfModule)
     SteamUI::CoreHook();
     SteamClient::CoreHook();
 
-    // Thong bao xac nhan DLL hoat dong khi mo Steam
-    OSTPlatform::Thread::StartDetached([]() -> uint32_t {
-        OSTPlatform::Dialog::ShowInfo(
-            "SLK SteamTools - DLL Đang Hoạt Động",
-            "SLK SteamTools DLL đã được nạp thành công vào Steam!\n\n"
-            "Trạng thái: Đang hoạt động (Hooks Active)\n"
-            "Hệ sinh thái: SLK Unlocker\n"
-            "Phiên bản: v1.0.5 (SLK Edition)\n"
-            "Chữ ký Steam: DrxmReal/slk-steam-monitor\n"
-            "Hỗ trợ Discord: https://discord.gg/FPNGs3NszJ");
-        return 0;
-    });
+
 
     // Surface any functions that FindPattern() could not locate.
     PatternLoader::ReportMissingFunctions();
