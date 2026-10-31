@@ -55,7 +55,7 @@ namespace {
     {
         message +=
             "\n\nSteam diagnostics:\n"
-            "  OpenSteamTool version: " + g_snapshot.openSteamToolVersion + "\n"
+            "  SLK SteamTools version: " + g_snapshot.openSteamToolVersion + "\n"
             "  Build ID:              " + g_snapshot.buildID + "\n"
             "  steamclient64.dll SHA: " + g_snapshot.steamclientSha256 + "\n"
             "  steamui.dll SHA:       " + g_snapshot.steamUISha256;
